@@ -1,0 +1,22 @@
+/* Ensure higher specificity */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+	color: #eae9e9; /* Your desired color */
+	width: 20px !important; /* Force width */
+	height: 20px !important; /* Force height */
+	font-size: 20px; /* Adjust font-size if necessary */
+	font-weight: bolder;
+}
+
+/* Ensure the buttons are centered and properly sized */
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+	font-size: 20px; /* Adjust font-size to match button size */
+	line-height: 20px; /* Match line-height to button height */
+}
+
+/* Optionally, adjust background-size if using image backgrounds */
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+	background-size: 20px 20px; /* Ensure background image fits the button size */
+}
