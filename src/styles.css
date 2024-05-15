@@ -20,3 +20,29 @@
 .mySwiper .swiper-button-prev::after {
 	background-size: 20px 20px; /* Ensure background image fits the button size */
 }
+/* button {
+	transition: 0.3s background-color 0.3s;
+}
+button:hover {
+	width: 130px;
+	height: 30px;
+	background-color: #333d51;
+} */
+button:hover {
+	animation: shrink 0.3s forwards, grow 0.3s 0.1s forwards; /* Apply the shrink and grow animations */
+	background-color: #333d51;
+}
+
+@keyframes shrink {
+	to {
+		width: 130px; /* Shrunk width */
+		height: 30px; /* Shrunk height */
+	}
+}
+
+@keyframes grow {
+	to {
+		width: 144px; /* Original width */
+		height: 40px; /* Original height */
+	}
+}
