@@ -69,13 +69,16 @@ function App() {
 								</div>
 								<h1 className='text-[#D6AC2B] text-center font-medium text-3xl py-5'>
 									{item.item_name.slice(0, 20)}
+									{item.item_name.slice(' ').length > 20
+										? ' ...'
+										: ''}
 								</h1>
 								<div className='text-center'>
-									<Link to='/productItem'>
-										<button className='bg-[#D6AC2B] text-white w-36 h-10 rounded-md'>
-											অর্ডার করুন
-										</button>
-									</Link>
+									{/* <Link to='/productItem'> */}
+									<button className='bg-[#D6AC2B] text-white w-36 h-10 rounded-md'>
+										অর্ডার করুন
+									</button>
+									{/* </Link> */}
 								</div>
 							</SwiperSlide>
 						</Swiper>
